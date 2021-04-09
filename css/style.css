@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+img {
+    width: 100%;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav {    
+    display: flex;
+    align-items: center;
+    
+}
+
+.left-menu {
+    width: 30%;
+}
+
+.right-menu {
+    width: 60%;
+}
+
+/*submenu*/
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.dropdown .active {
+    display: block;
+}
+
+.dropdown .menu li {
+    display: block;
+    text-align: left;
+}
