@@ -20,6 +20,23 @@ a {
     color: grey;
 }
 
+.black {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    background-color:#eb008e;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;    
+}
+
 .container {
     max-width: 1000px;
     margin: 30px auto;
@@ -31,6 +48,7 @@ img {
 
 nav img {
     width: 100px;
+    margin-right: 10px;
 }
 
 nav {    
@@ -47,20 +65,26 @@ nav {
     width: 60%;
 }
 
+.fa-chevron-down {
+    font-size: 8px;
+}
+
 /*submenu*/
 
 .dropdown {
     position: absolute;
     top: 100%;
-    left: 0;
-    display: none;
+    left: -100%;
+    width: 250px;
+    display: none;    
 }
 
-.dropdown .active {
+.dropdown.active {
     display: block;
 }
 
 .dropdown .menu li {
     display: block;
     text-align: left;
+    padding: 20px;
 }
